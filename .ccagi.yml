@@ -1,0 +1,54 @@
+# CCAGI SDK Configuration
+# Project: Iron Guard Corporation - Recruitment Page Renewal
+# Generated: 2026-05-21
+
+project:
+  name: ironguard-recruit
+  display_name: "アイアンガード採用ページリニューアル"
+  description: "アイアンガードコーポレーション株式会社の採用ページリニューアル"
+  type: static-site
+  language: ja
+  url: "https://ironguard-recruit.vercel.app/"
+  repository: "https://github.com/himitsujikken-ai/ironguard-recruit"
+
+# 技術スタック
+tech_stack:
+  framework: static-html
+  styling: css
+  fonts:
+    - "Noto Sans JP"
+    - "Oswald"
+  hosting: vercel
+  cms: none
+
+# ドメイン設定
+domain:
+  dev_subdomain: null
+  prod_subdomain: null
+  vercel_domain: "ironguard-recruit.vercel.app"
+
+# Phase管理
+current_phase: 1
+phase_issues:
+  phase1: 2
+
+# SSOT設定
+ssot:
+  issue_number: 1
+  created_at: "2026-05-21"
+
+# Agent設定
+coordinator_agent:
+  max_parallel_tasks: 3
+
+# 品質基準
+quality:
+  lighthouse:
+    performance: 90
+    accessibility: 100
+    best_practices: 100
+    seo: 100
+  wcag_level: "AA"
+
+advanced:
+  autocompact_pct: 70
