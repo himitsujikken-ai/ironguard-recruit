@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アイアンガード株式会社 | 鉄壁の護り - 格闘家によるプロフェッショナル警護</title>
+<meta name="description" content="アイアンガード株式会社は、元オリンピック日本代表率いる格闘家集団によるプロフェッショナル警護サービスを提供。要人警護・施設警備・ストーカー対策・探偵業務まで。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.top-hero h1 { font-size: clamp(36px, 7vw, 64px); }
+.top-hero .hero-content { max-width: 900px; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card {
+  background: #fff; border-radius: 8px; border: 1px solid #eef0f4;
+  padding: 40px 28px; text-align: center; position: relative; overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: #c41e1e; transform: scaleX(0); transition: transform 0.3s;
+}
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+.service-icon {
+  width: 64px; height: 64px; margin: 0 auto 20px; background: #0f1923;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px;
+}
+.service-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: #666; line-height: 1.8; }
+.service-num {
+  font-family: 'Oswald', sans-serif; font-size: 48px; font-weight: 700;
+  color: rgba(196,30,30,0.08); position: absolute; top: 12px; right: 20px;
+}
+.strength-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.strength-img { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+.strength-text h3 { font-size: 24px; font-weight: 700; margin-bottom: 20px; line-height: 1.5; }
+.strength-text p { font-size: 15px; color: #555; line-height: 2; margin-bottom: 20px; }
+.strength-list { list-style: none; margin-bottom: 32px; }
+.strength-list li {
+  font-size: 14px; color: #333; padding: 8px 0; display: flex; align-items: center;
+  gap: 12px; border-bottom: 1px solid #f0f1f4;
+}
+.strength-list li::before { content: '✓'; color: #c41e1e; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+.ceo-section { background: #0f1923; }
+.ceo-grid { display: grid; grid-template-columns: 300px 1fr; gap: 60px; align-items: center; }
+.ceo-photo-frame {
+  width: 220px; height: 220px; margin: 0 auto 20px; border-radius: 50%;
+  border: 3px solid #d4a853; overflow: hidden; background: rgba(255,255,255,0.05);
+  display: flex; align-items: center; justify-content: center;
+}
+.ceo-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+.ceo-name { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 4px; text-align: center; }
+.ceo-title-text { font-size: 13px; color: #a0a8b8; text-align: center; }
+.ceo-message h3 { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 24px; line-height: 1.5; }
+.ceo-message p { font-size: 15px; color: #a0a8b8; line-height: 2.2; margin-bottom: 16px; }
+.ceo-message .signature { text-align: right; font-size: 14px; color: #d4a853; margin-top: 24px; }
+.advisor-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; max-width: 800px; margin: 0 auto; }
+.advisor-card {
+  background: #f8f9fb; border-radius: 8px; padding: 32px; display: flex;
+  gap: 20px; align-items: flex-start; border: 1px solid #eef0f4;
+}
+.advisor-icon {
+  width: 56px; height: 56px; background: #0f1923; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0;
+}
+.advisor-info h4 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.advisor-info p { font-size: 13px; color: #666; line-height: 1.7; }
+.news-bar { background: #0a0e18; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 16px 0; }
+.news-bar .container { display: flex; align-items: center; gap: 20px; }
+.news-badge {
+  background: #c41e1e; color: #fff; font-size: 11px; font-weight: 700;
+  padding: 4px 12px; border-radius: 3px; flex-shrink: 0; letter-spacing: 0.5px;
+}
+.news-text { font-size: 13px; color: #a0a8b8; }
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .strength-grid, .ceo-grid { grid-template-columns: 1fr; }
+  .ceo-photo { order: -1; }
+  .advisor-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/logo.jpg" alt="アイアンガード">
+    <span class="logo-text">IRON GUARD</span>
+  </a>
+  <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  <nav id="mainNav">
+    <a href="about.html">アイアンガードとは</a>
+    <a href="company.html">会社概要</a>
+    <a href="recruit.html">採用情報</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="recruit.html#entry" class="header-cta">エントリー</a>
+  </nav>
+</header>
+
+<section class="hero top-hero">
+  <div class="hero-bg" style="background-image: url('https://ironguardcorp.jp/wp-content/uploads/2022/01/top1.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">IRON GUARD CORPORATION</div>
+    <h1><em>鉄壁</em>の護り</h1>
+    <p class="hero-sub">元オリンピック日本代表が率いる、格闘家によるプロフェッショナル警護集団。<br>要人警護からストーカー対策まで、鍛え抜かれた力であなたの安全を守ります。</p>
+    <div class="hero-buttons">
+      <a href="about.html" class="btn-primary">サービスを見る ▸</a>
+      <a href="contact.html" class="btn-outline">お問い合わせ</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>SCROLL</span><div class="line"></div></div>
+</section>
+
+<div class="news-bar">
+  <div class="container">
+    <span class="news-badge">NEWS</span>
+    <span class="news-text">本社を東京都港区白金台に移転しました。格闘技経験者を積極採用中 — <a href="recruit.html" style="color:#d4a853;">採用情報はこちら</a></span>
+  </div>
+</div>
+
+<section class="section-padding bg-light">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">SERVICES</div>
+      <h2 class="section-title">5つの事業領域</h2>
+      <p class="section-subtitle">警備業法に基づく4号警備（要人警護）を核に、<br>施設警備から調査業務まで幅広くカバーします。</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in"><span class="service-num">01</span><div class="service-icon">🛡</div><h3>要人警護</h3><p>企業経営者、芸能関係者、政治家などVIPの身辺警護。格闘技で鍛えた身体能力と危機対応力で安全を確保。</p></div>
+      <div class="service-card fade-in"><span class="service-num">02</span><div class="service-icon">🏢</div><h3>施設警備</h3><p>商業施設、オフィスビル、マンション等の常駐・巡回警備。出入管理から防災計画まで包括的にサポート。</p></div>
+      <div class="service-card fade-in"><span class="service-num">03</span><div class="service-icon">🚦</div><h3>雑踏・交通誘導</h3><p>大型イベント、コンサート、スポーツ大会での群衆整理と安全確保。交通誘導・駐車場管理にも対応。</p></div>
+      <div class="service-card fade-in"><span class="service-num">04</span><div class="service-icon">🚛</div><h3>運搬警備</h3><p>貴重品、重要書類、現金等の安全な輸送を保証。万全のセキュリティ体制で確実に届けます。</p></div>
+      <div class="service-card fade-in"><span class="service-num">05</span><div class="service-icon">🔍</div><h3>探偵・調査業務</h3><p>浮気調査、素行調査、企業調査。探偵業法に基づく合法的な調査で、確かな証拠を収集します。</p></div>
+      <div class="service-card fade-in"><span class="service-num">+</span><div class="service-icon">💜</div><h3>DV・ストーカー対策</h3><p>被害者の安全確保と生活再建を支援。NPO「サークルダルメシアン」との連携で社会的支援も。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding bg-white">
+  <div class="container">
+    <div class="strength-grid">
+      <div class="strength-img fade-in">
+        <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/personal-trainer-22.jpg" alt="アイアンガードの強み">
+      </div>
+      <div class="strength-text fade-in">
+        <div class="section-label">OUR STRENGTH</div>
+        <h3>格闘家だからできる、<br>本物の護り。</h3>
+        <p>アイアンガードのスタッフは、レスリング、キックボクシング、空手、柔道、ボクシングなど、様々な格闘技のプロ・アマチュア経験者で構成。数十年にわたる格闘家人脈から、案件に最適な人材をアサインします。</p>
+        <ul class="strength-list">
+          <li>オリンピック日本代表・世界チャンピオン経験者が在籍</li>
+          <li>警視庁OB・国会議員が顧問として監修</li>
+          <li>警備業法に基づく法令遵守の徹底</li>
+          <li>心理学研修による高いコミュニケーション能力</li>
+          <li>全国47都道府県に対応可能なネットワーク</li>
+        </ul>
+        <a href="about.html" class="btn-dark">詳しく見る ▸</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ceo-section section-padding">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label light">MESSAGE</div>
+      <h2 class="section-title text-white">代表メッセージ</h2>
+    </div>
+    <div class="ceo-grid fade-in">
+      <div class="ceo-photo">
+        <div class="ceo-photo-frame">
+          <img src="https://ironguardcorp.jp/wp-content/uploads/2022/06/IMG_0694-300x300.jpg" alt="代表取締役 河村蘭">
+        </div>
+        <div class="ceo-name">河村 蘭</div>
+        <div class="ceo-title-text">代表取締役</div>
+      </div>
+      <div class="ceo-message">
+        <h3>「鉄壁の護り」を、<br>すべての人に。</h3>
+        <p>アイアンガードは、格闘家が持つ「護る力」を社会に還元するために生まれました。</p>
+        <p>格闘技の世界で鍛え上げた身体能力、危機察知能力、そして不屈の精神力。これらは、人を護る仕事において何よりも大きな武器になります。</p>
+        <p>私たちは、お客様一人ひとりの安全と安心を最優先に、警視庁OBや専門家の知見を結集した質の高い警護サービスを提供しています。同時に、格闘家のセカンドキャリアを支援し、彼らが社会で輝き続けられる場を創ることも、私たちの大切な使命です。</p>
+        <div class="signature">アイアンガード株式会社 代表取締役　河村 蘭</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding bg-white">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">ADVISORS</div>
+      <h2 class="section-title">顧問紹介</h2>
+      <p class="section-subtitle">各分野のトップエキスパートが、IGCの運営を監修しています。</p>
+    </div>
+    <div class="advisor-grid fade-in">
+      <div class="advisor-card">
+        <div class="advisor-icon">👔</div>
+        <div class="advisor-info"><h4>龍 一文</h4><p>元警視庁捜査一課長。警視庁警察学校長・警視長を歴任。豊富な捜査経験と治安維持の知見でIGCの警護品質を監修。</p></div>
+      </div>
+      <div class="advisor-card">
+        <div class="advisor-icon">🏛</div>
+        <div class="advisor-info"><h4>宇都 隆史</h4><p>防衛大学理工学部卒。自民党政調会長代理（現職）。元外務副大臣。国防・外交の専門知識でIGCの信頼性を支える。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container fade-in">
+    <h2>格闘技経験を活かして働きませんか？</h2>
+    <p>ボディーガード・施設警備スタッフを積極採用中。<br>未経験者も歓迎。まずはお気軽にご相談ください。</p>
+    <div class="hero-buttons">
+      <a href="recruit.html" class="btn-outline">採用情報を見る ▸</a>
+      <a href="contact.html" class="btn-outline">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">IRON GUARD</div>
+        <div class="footer-company-name">アイアンガード株式会社</div>
+        <div class="footer-contact-item">📍 本社：〒108-0071 東京都港区白金台3-2-1 渡辺ビル1F</div>
+        <div class="footer-contact-item">📍 支店：〒120-0015 東京都足立区足立4-36-6 YCビル202</div>
+        <div class="footer-contact-item">📞 本社：03-6456-2911</div>
+        <div class="footer-contact-item">📞 支店：080-5645-2718</div>
+        <div class="footer-contact-item">🕐 営業時間：月〜金 10:00〜19:00（Web受付は24時間）</div>
+      </div>
+      <div>
+        <div class="footer-heading">ページ一覧</div>
+        <ul class="footer-links">
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="about.html">アイアンガードとは</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">採用情報</div>
+        <ul class="footer-links">
+          <li><a href="recruit.html">募集職種</a></li>
+          <li><a href="recruit.html#training">研修制度</a></li>
+          <li><a href="recruit.html#interview">先輩の声</a></li>
+          <li><a href="recruit.html#faq">よくある質問</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 アイアンガード株式会社 All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+<script>
+function toggleMenu() { document.getElementById('mainNav').classList.toggle('open'); }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+window.addEventListener('scroll', () => { document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 600); });
+</script>
+</body>
+</html>

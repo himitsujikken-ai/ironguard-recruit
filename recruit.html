@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用情報 | アイアンガード株式会社 - 格闘家によるプロフェッショナル警護</title>
+<meta name="description" content="アイアンガード株式会社の採用情報。格闘技経験を活かしたボディーガード・警備スタッフを募集中。未経験者も歓迎。研修制度完備。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #1a1e2e;
+  background: #ffffff;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; transition: opacity 0.3s; }
+a:hover { opacity: 0.8; }
+
+/* ========== UTILITY ========== */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.section-padding { padding: 100px 0; }
+.text-center { text-align: center; }
+.text-white { color: #ffffff; }
+
+/* Section Label */
+.section-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c41e1e;
+  margin-bottom: 12px;
+}
+.section-label.light { color: #d4a853; }
+
+.section-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 640px;
+  margin: 0 auto 60px;
+  line-height: 1.9;
+}
+.section-subtitle.light { color: #a0a8b8; }
+
+/* ========== HEADER / NAV ========== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 40px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(15, 25, 35, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.3s;
+}
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.site-header .logo img {
+  height: 40px;
+  width: auto;
+}
+.site-header .logo-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.site-header nav { display: flex; align-items: center; gap: 32px; }
+.site-header nav a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #b0b8c8;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+.site-header nav a:hover { color: #fff; opacity: 1; }
+.header-cta {
+  background: #c41e1e;
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.header-cta:hover { background: #a81818; opacity: 1 !important; }
+
+/* Mobile menu */
+.menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+.menu-toggle span { display: block; width: 24px; height: 2px; background: #fff; transition: 0.3s; }
+
+/* ========== HERO ========== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f1923;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('https://ironguardcorp.jp/wp-content/uploads/2022/01/gym_31.jpg') center center / cover no-repeat;
+  opacity: 0.35;
+  filter: grayscale(30%);
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,25,35,0.6) 0%, rgba(15,25,35,0.85) 100%);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 120px 24px 80px;
+  max-width: 800px;
+}
+.hero-badge {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #d4a853;
+  border: 1px solid rgba(212,168,83,0.4);
+  padding: 8px 24px;
+  margin-bottom: 32px;
+}
+.hero h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #c41e1e;
+}
+.hero-sub {
+  font-size: 17px;
+  color: #a0a8b8;
+  line-height: 1.9;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #c41e1e;
+  color: #fff;
+  padding: 16px 40px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+.btn-primary:hover { background: #a81818; transform: translateY(-2px); opacity: 1; }
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #fff;
+  padding: 16px 40px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s;
+  letter-spacing: 0.5px;
+}
+.btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.05); opacity: 1; }
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #a0a8b8;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+.scroll-indicator .line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, #a0a8b8, transparent);
+  animation: scrollPulse 2s infinite;
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* ========== REASONS (3 PILLARS) ========== */
+.reasons { background: #ffffff; }
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.reason-card {
+  text-align: center;
+  padding: 48px 32px;
+  border-radius: 8px;
+  background: #f8f9fb;
+  border: 1px solid #eef0f4;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.reason-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+.reason-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  background: #0f1923;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.reason-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.reason-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.9;
+}
+
+/* ========== NUMBERS ========== */
+.numbers {
+  background: #0f1923;
+  padding: 60px 0;
+}
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+.number-item .num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #d4a853;
+  line-height: 1.2;
+}
+.number-item .num span { font-size: 20px; font-weight: 400; color: #a0a8b8; }
+.number-item .label {
+  font-size: 13px;
+  color: #a0a8b8;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* ========== JOBS ========== */
+.jobs { background: #f8f9fb; }
+.jobs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.job-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eef0f4;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+}
+.job-card-header {
+  background: #0f1923;
+  padding: 32px;
+  position: relative;
+}
+.job-card-header .job-type {
+  display: inline-block;
+  background: #c41e1e;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+.job-card-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.job-card-header p {
+  font-size: 14px;
+  color: #a0a8b8;
+}
+.job-card-body { padding: 32px; }
+.job-detail-row {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f1f4;
+  font-size: 14px;
+}
+.job-detail-row:last-child { border-bottom: none; }
+.job-detail-label {
+  width: 120px;
+  flex-shrink: 0;
+  font-weight: 700;
+  color: #1a1e2e;
+  font-size: 13px;
+}
+.job-detail-value {
+  color: #444;
+  line-height: 1.7;
+}
+.job-card-footer {
+  padding: 0 32px 32px;
+}
+.btn-job {
+  display: block;
+  text-align: center;
+  background: #0f1923;
+  color: #fff;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.3s;
+}
+.btn-job:hover { background: #1a2a3e; opacity: 1; }
+
+/* ========== DAILY FLOW ========== */
+.daily { background: #fff; }
+.timeline { max-width: 700px; margin: 0 auto; position: relative; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #c41e1e, #d4a853);
+}
+.timeline-item {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 8px;
+  padding: 20px 0;
+  position: relative;
+}
+.timeline-time {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #c41e1e;
+  width: 60px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 2px;
+}
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #c41e1e;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 2px #c41e1e;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+}
+.timeline-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.timeline-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ========== SERVICE TABS ========== */
+.services-section { background: #0f1923; }
+.service-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.service-tab {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a0a8b8;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.service-tab:hover, .service-tab.active {
+  background: #c41e1e;
+  border-color: #c41e1e;
+  color: #fff;
+}
+.service-panel { display: none; }
+.service-panel.active { display: flex; gap: 48px; align-items: center; }
+.service-panel-img {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: rgba(255,255,255,0.05);
+}
+.service-panel-img img { width: 100%; height: 100%; object-fit: cover; }
+.service-panel-text { flex: 1; }
+.service-panel-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.service-panel-text p {
+  font-size: 15px;
+  color: #a0a8b8;
+  line-height: 2;
+  margin-bottom: 24px;
+}
+.service-features { list-style: none; }
+.service-features li {
+  font-size: 14px;
+  color: #d4a853;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.service-features li::before {
+  content: '■';
+  font-size: 8px;
+  color: #c41e1e;
+}
+
+/* ========== INTERVIEW ========== */
+.interview { background: #f8f9fb; }
+.interview-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.interview-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eef0f4;
+}
+.interview-card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px;
+  background: linear-gradient(135deg, #0f1923 0%, #1a2a3e 100%);
+}
+.interview-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #d4a853;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+.interview-meta h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.interview-meta p {
+  font-size: 13px;
+  color: #a0a8b8;
+}
+.interview-card-body { padding: 32px; }
+.interview-qa { margin-bottom: 24px; }
+.interview-qa:last-child { margin-bottom: 0; }
+.interview-qa .q {
+  font-size: 14px;
+  font-weight: 700;
+  color: #c41e1e;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.interview-qa .q::before {
+  content: 'Q';
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background: #c41e1e;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.interview-qa .a {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.9;
+  padding-left: 36px;
+}
+
+/* ========== TRAINING / CAREER ========== */
+.training { background: #fff; }
+.training-flow { max-width: 800px; margin: 0 auto 60px; }
+.training-step {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  position: relative;
+}
+.step-number {
+  width: 48px;
+  height: 48px;
+  background: #c41e1e;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.training-step::after {
+  content: '';
+  position: absolute;
+  left: 23px;
+  top: 48px;
+  width: 2px;
+  height: calc(100% + 32px - 48px);
+  background: #e0e3e8;
+}
+.training-step:last-child::after { display: none; }
+.step-content h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  padding-top: 10px;
+}
+.step-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+.career-path {
+  background: #0f1923;
+  border-radius: 12px;
+  padding: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.career-path h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.career-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.career-step {
+  text-align: center;
+  padding: 16px 20px;
+  position: relative;
+}
+.career-step .role {
+  font-size: 14px;
+  font-weight: 700;
+  color: #d4a853;
+  margin-bottom: 4px;
+}
+.career-step .years {
+  font-size: 12px;
+  color: #a0a8b8;
+}
+.career-arrow {
+  font-size: 20px;
+  color: #c41e1e;
+  flex-shrink: 0;
+}
+
+/* ========== FAQ ========== */
+.faq { background: #f8f9fb; }
+.faq-list { max-width: 760px; margin: 0 auto; }
+.faq-item {
+  background: #fff;
+  border: 1px solid #eef0f4;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.faq-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+.faq-question {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  border: none;
+  background: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1e2e;
+  text-align: left;
+}
+.faq-question .q-badge {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #c41e1e;
+  flex-shrink: 0;
+}
+.faq-question .arrow {
+  margin-left: auto;
+  font-size: 20px;
+  color: #ccc;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+.faq-item.open .faq-question .arrow { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-answer-inner {
+  padding: 0 24px 24px 56px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.9;
+}
+
+/* ========== PROCESS ========== */
+.process { background: #fff; }
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: linear-gradient(90deg, #c41e1e, #d4a853);
+}
+.process-step { text-align: center; position: relative; z-index: 1; }
+.process-step .step-circle {
+  width: 80px;
+  height: 80px;
+  background: #0f1923;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d4a853;
+  border: 3px solid #d4a853;
+}
+.process-step h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.process-step p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ========== ENTRY FORM ========== */
+.entry {
+  background: linear-gradient(135deg, #0f1923 0%, #1a2a3e 100%);
+}
+.entry-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.form-row {
+  margin-bottom: 24px;
+}
+.form-row label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.form-row label .required {
+  background: #c41e1e;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+.form-row label .optional {
+  background: rgba(255,255,255,0.15);
+  color: #a0a8b8;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="number"],
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+}
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: #d4a853;
+  background: rgba(255,255,255,0.12);
+}
+.form-row select { appearance: none; cursor: pointer; }
+.form-row select option { background: #1a2a3e; color: #fff; }
+.form-row textarea { min-height: 120px; resize: vertical; }
+.form-row-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.checkbox-group { display: flex; flex-wrap: wrap; gap: 12px; }
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b0b8c8;
+  cursor: pointer;
+  padding: 10px 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.checkbox-group label:hover {
+  border-color: #d4a853;
+  background: rgba(255,255,255,0.05);
+}
+.checkbox-group input[type="checkbox"],
+.checkbox-group input[type="radio"] {
+  accent-color: #c41e1e;
+  width: 16px;
+  height: 16px;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  background: #c41e1e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  letter-spacing: 1px;
+  margin-top: 16px;
+}
+.btn-submit:hover { background: #a81818; transform: translateY(-2px); }
+
+.form-note {
+  text-align: center;
+  font-size: 12px;
+  color: #a0a8b8;
+  margin-top: 16px;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background: #080c14;
+  padding: 60px 0 0;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+.footer-company-name {
+  font-size: 14px;
+  color: #a0a8b8;
+  margin-bottom: 20px;
+}
+.footer-contact-item {
+  font-size: 13px;
+  color: #a0a8b8;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a {
+  font-size: 13px;
+  color: #a0a8b8;
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: #d4a853; opacity: 1; }
+.footer-bottom {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ========== BACK TO TOP ========== */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background: #c41e1e;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 999;
+  border: none;
+}
+.back-to-top.visible { opacity: 1; visibility: visible; }
+.back-to-top:hover { background: #a81818; transform: translateY(-3px); }
+
+/* ========== ANIMATIONS ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+  .numbers-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .interview-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 768px) {
+  .site-header { padding: 0 20px; }
+  .site-header nav { display: none; }
+  .site-header nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px; left: 0; right: 0;
+    background: rgba(15,25,35,0.98);
+    padding: 24px;
+    gap: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .menu-toggle { display: flex; }
+  .section-padding { padding: 64px 0; }
+  .section-title { font-size: 26px; }
+  .reasons-grid { grid-template-columns: 1fr; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .service-panel.active { flex-direction: column; }
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .process-steps::before { display: none; }
+  .career-steps { flex-direction: column; gap: 16px; }
+  .career-arrow { transform: rotate(90deg); }
+  .form-row-half { grid-template-columns: 1fr; }
+  .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .number-item .num { font-size: 36px; }
+  .career-path { padding: 32px 20px; }
+}
+@media (max-width: 480px) {
+  .process-steps { grid-template-columns: 1fr; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  .hero h1 { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/logo.jpg" alt="アイアンガード">
+    <span class="logo-text">IRON GUARD</span>
+  </a>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <nav id="mainNav">
+    <a href="about.html">アイアンガードとは</a>
+    <a href="company.html">会社概要</a>
+    <a href="recruit.html" class="active">採用情報</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="#entry" class="header-cta">エントリー</a>
+  </nav>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">RECRUIT 2026</div>
+    <h1>その強さを、<br>誰かの<em>安心</em>に。</h1>
+    <p class="hero-sub">
+      元オリンピック日本代表が率いる、<br>
+      格闘家によるプロフェッショナル警護集団。<br>
+      あなたの経験と力が、誰かの人生を護る仕事になる。
+    </p>
+    <div class="hero-buttons">
+      <a href="#jobs" class="btn-primary">募集要項を見る ▸</a>
+      <a href="#entry" class="btn-outline">まずは話を聞く</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- ========== REASONS ========== -->
+<section class="reasons section-padding" id="reasons">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">WHY IRON GUARD</div>
+      <h2 class="section-title">IGCで働く3つの理由</h2>
+      <p class="section-subtitle">格闘技で培った力を、社会に還元する。<br>アイアンガードには、それを実現する環境があります。</p>
+    </div>
+    <div class="reasons-grid">
+      <div class="reason-card fade-in">
+        <div class="reason-icon">🛡</div>
+        <h3>業界トップクラスの信頼性</h3>
+        <p>代表はアトランタオリンピック レスリング日本代表。顧問に警視庁OB・国会議員を擁する、他に類を見ない信頼基盤。クライアントからの信頼が厚く、高品質な案件が集まります。</p>
+      </div>
+      <div class="reason-card fade-in">
+        <div class="reason-icon">💪</div>
+        <h3>格闘技経験がそのまま武器に</h3>
+        <p>レスリング、キックボクシング、空手、柔道、ボクシング。あらゆる格闘技の経験が、要人警護の現場で直接的な価値を持ちます。未経験の方にも充実した研修制度を用意。</p>
+      </div>
+      <div class="reason-card fade-in">
+        <div class="reason-icon">🌏</div>
+        <h3>全国対応・柔軟な働き方</h3>
+        <p>東京・港区の本社を拠点に、全国の案件に対応。地方在住でも活躍可能。ライフスタイルに合わせた勤務形態で、現役選手との両立も支援します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NUMBERS ========== -->
+<section class="numbers">
+  <div class="container">
+    <div class="numbers-grid fade-in">
+      <div class="number-item">
+        <div class="num">2021<span>年</span></div>
+        <div class="label">設立</div>
+      </div>
+      <div class="number-item">
+        <div class="num">5<span>業務</span></div>
+        <div class="label">事業領域</div>
+      </div>
+      <div class="number-item">
+        <div class="num">47<span>都道府県</span></div>
+        <div class="label">対応エリア</div>
+      </div>
+      <div class="number-item">
+        <div class="num">24<span>h</span></div>
+        <div class="label">受付対応</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== JOBS ========== -->
+<section class="jobs section-padding" id="jobs">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">OPEN POSITIONS</div>
+      <h2 class="section-title">募集職種</h2>
+      <p class="section-subtitle">現在、以下の職種で仲間を募集しています。<br>あなたの経験に合ったポジションをお選びください。</p>
+    </div>
+    <div class="jobs-grid">
+      <!-- Job 1 -->
+      <div class="job-card fade-in">
+        <div class="job-card-header">
+          <span class="job-type">正社員 / 業務委託</span>
+          <h3>ボディーガード（要人警護）</h3>
+          <p>格闘技経験を活かしたVIP警護のプロフェッショナル</p>
+        </div>
+        <div class="job-card-body">
+          <div class="job-detail-row">
+            <div class="job-detail-label">給与</div>
+            <div class="job-detail-value">月給 28万円〜50万円<br><small style="color:#999">※経験・スキル・案件内容により優遇</small></div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">勤務地</div>
+            <div class="job-detail-value">本社（東京都港区）+ 全国出張あり</div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">勤務時間</div>
+            <div class="job-detail-value">案件によりシフト制</div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">応募資格</div>
+            <div class="job-detail-value">格闘技経験者歓迎（実績不問）<br>未経験者も相談可</div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">待遇</div>
+            <div class="job-detail-value">研修制度完備 / 交通費支給 / 制服貸与</div>
+          </div>
+        </div>
+        <div class="job-card-footer">
+          <a href="#entry" class="btn-job">この職種に応募する</a>
+        </div>
+      </div>
+      <!-- Job 2 -->
+      <div class="job-card fade-in">
+        <div class="job-card-header">
+          <span class="job-type">正社員 / アルバイト</span>
+          <h3>施設警備スタッフ</h3>
+          <p>商業施設・オフィスビル等の安全を守る</p>
+        </div>
+        <div class="job-card-body">
+          <div class="job-detail-row">
+            <div class="job-detail-label">給与</div>
+            <div class="job-detail-value">月給 24万円〜 / 日給 12,000円〜<br><small style="color:#999">※夜勤手当・資格手当あり</small></div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">勤務地</div>
+            <div class="job-detail-value">都内各所</div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">勤務時間</div>
+            <div class="job-detail-value">シフト制（日勤・夜勤あり）</div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">応募資格</div>
+            <div class="job-detail-value">18歳以上<br>未経験歓迎・格闘技経験者優遇</div>
+          </div>
+          <div class="job-detail-row">
+            <div class="job-detail-label">待遇</div>
+            <div class="job-detail-value">研修制度完備 / 交通費支給 / 制服貸与</div>
+          </div>
+        </div>
+        <div class="job-card-footer">
+          <a href="#entry" class="btn-job">この職種に応募する</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAILY FLOW ========== -->
+<section class="daily section-padding">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">DAILY SCHEDULE</div>
+      <h2 class="section-title">ボディーガードの1日</h2>
+      <p class="section-subtitle">要人警護案件における、一般的な1日の流れをご紹介します。</p>
+    </div>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="timeline-time">08:00</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>出社・ブリーフィング</h4>
+          <p>当日の警護計画を確認。クライアントのスケジュール・移動ルート・リスク要因を共有。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">09:00</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>現場到着・事前確認</h4>
+          <p>警護対象地点の下見。避難経路・周辺環境のチェック。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">10:00</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>警護業務開始</h4>
+          <p>クライアントの行動に同行。常に周囲に注意を払い、安全を確保。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">12:30</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>交代制で休憩</h4>
+          <p>チームメンバーと交代しながら休憩。緊急時の連絡体制は常に維持。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">13:30</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>午後の警護業務</h4>
+          <p>引き続き警護を継続。状況の変化に応じて柔軟に対応。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">17:00</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>業務終了・報告</h4>
+          <p>警護報告書を作成。特記事項やインシデントの記録。翌日の準備。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">18:00</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>退勤</h4>
+          <p>お疲れさまでした。明日に備えてしっかり休養。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="services-section section-padding">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label light">SERVICES</div>
+      <h2 class="section-title text-white">業務カテゴリ</h2>
+      <p class="section-subtitle light">IGCが手がける5つの事業領域。<br>あなたの適性に合った分野で活躍できます。</p>
+    </div>
+    <div class="service-tabs fade-in">
+      <div class="service-tab active" data-tab="0">要人警護</div>
+      <div class="service-tab" data-tab="1">施設警備</div>
+      <div class="service-tab" data-tab="2">イベント警備</div>
+      <div class="service-tab" data-tab="3">DV・ストーカー対策</div>
+      <div class="service-tab" data-tab="4">調査業務</div>
+    </div>
+    <div class="service-panel active" data-panel="0">
+      <div class="service-panel-img">
+        <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/personal-trainer-22.jpg" alt="要人警護">
+      </div>
+      <div class="service-panel-text">
+        <h3>要人警護</h3>
+        <p>企業経営者、芸能関係者、政治家など、VIPの身辺を護る最重要業務。格闘技で鍛えた身体能力と危機察知能力が最大限に活かされる領域です。</p>
+        <ul class="service-features">
+          <li>24時間体制でのクライアント随行</li>
+          <li>移動ルートの事前調査と安全確保</li>
+          <li>イベント・会合時のセキュリティマネジメント</li>
+          <li>緊急時の避難誘導・対処</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-panel" data-panel="1">
+      <div class="service-panel-img">
+        <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/top1.jpg" alt="施設警備">
+      </div>
+      <div class="service-panel-text">
+        <h3>施設警備</h3>
+        <p>商業施設、オフィスビル、マンション等の安全を守る基幹業務。巡回・監視・出入管理を通じて、施設利用者の安心を支えます。</p>
+        <ul class="service-features">
+          <li>定期巡回・常駐警備</li>
+          <li>出入管理・監視カメラモニタリング</li>
+          <li>不審者対応・緊急事態対処</li>
+          <li>防災・防犯計画の策定支援</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-panel" data-panel="2">
+      <div class="service-panel-img">
+        <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/gym_31.jpg" alt="イベント警備">
+      </div>
+      <div class="service-panel-text">
+        <h3>雑踏・交通誘導警備</h3>
+        <p>大型イベント、コンサート、スポーツ大会等での群衆整理と安全確保。格闘技イベントでの実績も豊富で、経験を活かせます。</p>
+        <ul class="service-features">
+          <li>来場者の動線管理・誘導</li>
+          <li>VIPエリアのアクセス制御</li>
+          <li>緊急避難計画の実行</li>
+          <li>交通誘導・駐車場管理</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-panel" data-panel="3">
+      <div class="service-panel-img">
+        <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/personal-trainer-22.jpg" alt="DV・ストーカー対策">
+      </div>
+      <div class="service-panel-text">
+        <h3>DV・ストーカー対策支援</h3>
+        <p>被害者の安全を最優先に、専門知識と護身能力で生活を守る社会貢献性の高い業務。NPO「サークルダルメシアン」との提携活動も。</p>
+        <ul class="service-features">
+          <li>被害者の移動時の身辺警護</li>
+          <li>安全な引っ越し・転居サポート</li>
+          <li>心理カウンセラーとの連携</li>
+          <li>法的手続き時のエスコート</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-panel" data-panel="4">
+      <div class="service-panel-img">
+        <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/top1.jpg" alt="調査業務">
+      </div>
+      <div class="service-panel-text">
+        <h3>探偵・調査業務</h3>
+        <p>浮気調査、素行調査、企業調査など、探偵業法に基づいた合法的な調査業務。確かな情報収集能力で、クライアントの課題を解決。</p>
+        <ul class="service-features">
+          <li>浮気・不貞行為の証拠収集</li>
+          <li>素行・身辺調査</li>
+          <li>企業信用調査</li>
+          <li>法的手続きに有効な証拠資料の作成</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INTERVIEW ========== -->
+<section class="interview section-padding" id="interview">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">VOICE</div>
+      <h2 class="section-title">先輩スタッフの声</h2>
+      <p class="section-subtitle">IGCで活躍するスタッフに、リアルな声を聞きました。</p>
+    </div>
+    <div class="interview-grid">
+      <div class="interview-card fade-in">
+        <div class="interview-card-header">
+          <div class="interview-avatar">👤</div>
+          <div class="interview-meta">
+            <h4>Aさん（30代）</h4>
+            <p>キックボクシング元プロ / 入社2年目 / ボディーガード</p>
+          </div>
+        </div>
+        <div class="interview-card-body">
+          <div class="interview-qa">
+            <div class="q">IGCに入社したきっかけは？</div>
+            <div class="a">引退後、格闘技の経験を活かせる仕事を探していたところ、IGCの存在を知りました。代表自身がオリンピック選手で、格闘家のセカンドキャリアに本気で取り組んでいる姿勢に共感して応募を決めました。</div>
+          </div>
+          <div class="interview-qa">
+            <div class="q">仕事のやりがいを教えてください。</div>
+            <div class="a">クライアントから「あなたがいると安心する」と言われた時が一番嬉しいです。リングの上とは違う形で、自分の力が誰かの役に立っていると実感できます。</div>
+          </div>
+          <div class="interview-qa">
+            <div class="q">今後の目標は？</div>
+            <div class="a">チームリーダーとして後輩の指導にも関わりたいです。格闘家のセカンドキャリアの選択肢を広げる手伝いがしたいと思っています。</div>
+          </div>
+        </div>
+      </div>
+      <div class="interview-card fade-in">
+        <div class="interview-card-header">
+          <div class="interview-avatar">👤</div>
+          <div class="interview-meta">
+            <h4>Bさん（20代）</h4>
+            <p>柔道二段 / 入社1年目 / 施設警備</p>
+          </div>
+        </div>
+        <div class="interview-card-body">
+          <div class="interview-qa">
+            <div class="q">未経験でも大丈夫でしたか？</div>
+            <div class="a">警備業界は初めてでしたが、研修が本当にしっかりしていて安心でした。座学だけでなく実技もあり、現場に出る前に自信がつきます。先輩も皆さん面倒見が良いです。</div>
+          </div>
+          <div class="interview-qa">
+            <div class="q">IGCの雰囲気は？</div>
+            <div class="a">格闘技をやっていた人が多いので、体育会系のイメージがあるかもしれませんが、実際はとても風通しが良いです。礼儀は大事にしつつ、上下関係が厳しすぎることはありません。</div>
+          </div>
+          <div class="interview-qa">
+            <div class="q">就活中の方にメッセージを。</div>
+            <div class="a">格闘技を続けてきた時間は絶対に無駄になりません。IGCなら、その経験がそのまま仕事の強みになります。少しでも興味があれば、まず話を聞いてみてください。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRAINING & CAREER ========== -->
+<section class="training section-padding" id="training">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">TRAINING & CAREER</div>
+      <h2 class="section-title">研修制度・キャリアパス</h2>
+      <p class="section-subtitle">警備業法に準拠した充実の研修プログラム。<br>未経験でも、プロフェッショナルへ着実に成長できます。</p>
+    </div>
+    <div class="training-flow fade-in">
+      <div class="training-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h4>基本教育（座学）</h4>
+          <p>警備業法・関連法規の理解、守秘義務、基本的な護身術。警備員としての心構えと倫理観を身につけます。</p>
+        </div>
+      </div>
+      <div class="training-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h4>業務別教育（実技）</h4>
+          <p>配属先に応じた専門研修。要人警護、施設警備、雑踏警備など、各業務に特化した実践的スキルを習得。</p>
+        </div>
+      </div>
+      <div class="training-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h4>心理学研修</h4>
+          <p>岡田式AC判別法をはじめとする心理学研修（4時間）。クライアントとのコミュニケーション能力を高めます。</p>
+        </div>
+      </div>
+      <div class="training-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h4>OJT（現場実習）</h4>
+          <p>経験豊富な先輩スタッフと同行して実際の現場を経験。安心して独り立ちできるよう、丁寧にサポートします。</p>
+        </div>
+      </div>
+      <div class="training-step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h4>独り立ち・継続教育</h4>
+          <p>単独案件を担当開始。その後も年間12時間の継続教育で、スキルを常にアップデートし続けます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="career-path fade-in">
+      <h3>キャリアパス</h3>
+      <div class="career-steps">
+        <div class="career-step">
+          <div class="role">研修生</div>
+          <div class="years">入社〜3ヶ月</div>
+        </div>
+        <div class="career-arrow">▸</div>
+        <div class="career-step">
+          <div class="role">警護員</div>
+          <div class="years">3ヶ月〜</div>
+        </div>
+        <div class="career-arrow">▸</div>
+        <div class="career-step">
+          <div class="role">シニア警護員</div>
+          <div class="years">2年〜</div>
+        </div>
+        <div class="career-arrow">▸</div>
+        <div class="career-step">
+          <div class="role">チームリーダー</div>
+          <div class="years">3年〜</div>
+        </div>
+        <div class="career-arrow">▸</div>
+        <div class="career-step">
+          <div class="role">マネージャー</div>
+          <div class="years">5年〜</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="faq section-padding" id="faq">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">よくある質問</h2>
+      <p class="section-subtitle">応募前の疑問にお答えします。<br>ここに載っていないことも、お気軽にお問い合わせください。</p>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          格闘技の実績はどのくらい必要ですか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">実績の多少は問いません。登録だけであれば実績がなくても可能です。プロ経験者はもちろん、アマチュアや学生時代の部活動レベルの方でも、意欲があれば歓迎します。研修を通じて、実践的なスキルを身につけていただけます。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          格闘技未経験でも応募できますか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">はい、応募可能です。格闘技経験者を優遇しておりますが、体力に自信があり、人を護る仕事に強い意志がある方であれば、未経験者もご相談ください。充実した研修プログラムで基礎からしっかりお教えします。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          地方に住んでいますが、働けますか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">はい、全国の案件に対応していますので、地方在住の方も活躍いただけます。案件によっては出張ベースでの勤務も可能です。まずはご相談ください。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          給与の目安を教えてください。
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">経験・スキル・担当案件により異なりますが、ボディーガード職で月給28万円〜50万円が目安です。特別な案件やスキルに応じて優遇いたします。詳細は面談時にご説明します。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          現役の格闘家ですが、練習と両立できますか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">はい、現役選手の活動を支援する体制を整えています。試合や合宿のスケジュールを考慮したシフト調整が可能です。格闘家としてのキャリアを続けながら、安定した収入を得られる環境です。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          危険な目に遭うことはありますか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">安全管理を最優先としており、事前のリスク分析と計画立案を徹底しています。また、万が一に備えた保険制度も完備しています。チームで行動するため、一人で危険な状況に置かれることはありません。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          女性でも応募できますか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">もちろんです。女性クライアントの警護案件も多く、女性スタッフのニーズは高まっています。性別に関係なく、実力と意欲のある方を歓迎します。</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="q-badge">Q</span>
+          応募から採用までどのくらいかかりますか？
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">エントリーから面談まで約1週間、研修期間を含めて最短2〜3週間で業務開始が可能です。急ぎの方はご相談ください。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section class="process section-padding" id="process">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">APPLICATION FLOW</div>
+      <h2 class="section-title">応募の流れ</h2>
+      <p class="section-subtitle">エントリーから業務開始まで、シンプルな4ステップ。</p>
+    </div>
+    <div class="process-steps fade-in">
+      <div class="process-step">
+        <div class="step-circle">01</div>
+        <h4>エントリー</h4>
+        <p>下記フォームまたはお電話でご応募ください。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">02</div>
+        <h4>面談・説明会</h4>
+        <p>対面またはオンラインで実施。仕事内容を詳しくご説明します。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">03</div>
+        <h4>研修受講</h4>
+        <p>警備業法に基づく基本教育・業務別教育を受講いただきます。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">04</div>
+        <h4>業務開始</h4>
+        <p>研修修了後、先輩と同行しながら実際の業務をスタート。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ENTRY FORM ========== -->
+<section class="entry section-padding" id="entry">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label light">ENTRY</div>
+      <h2 class="section-title text-white">エントリーフォーム</h2>
+      <p class="section-subtitle light">まずはお気軽にご応募ください。<br>「まだ迷っている」「話だけ聞きたい」という方も大歓迎です。</p>
+    </div>
+    <div class="entry-inner fade-in">
+      <form id="entryForm" action="#" method="post">
+        <div class="form-row-half">
+          <div class="form-row">
+            <label>お名前 <span class="required">必須</span></label>
+            <input type="text" name="name" placeholder="山田 太郎" required>
+          </div>
+          <div class="form-row">
+            <label>フリガナ <span class="required">必須</span></label>
+            <input type="text" name="furigana" placeholder="ヤマダ タロウ" required>
+          </div>
+        </div>
+        <div class="form-row-half">
+          <div class="form-row">
+            <label>年齢 <span class="required">必須</span></label>
+            <input type="number" name="age" placeholder="30" min="18" max="65" required>
+          </div>
+          <div class="form-row">
+            <label>お住まいの都道府県 <span class="required">必須</span></label>
+            <select name="prefecture" required>
+              <option value="" disabled selected>選択してください</option>
+              <option>北海道</option><option>青森県</option><option>岩手県</option><option>宮城県</option><option>秋田県</option><option>山形県</option><option>福島県</option><option>茨城県</option><option>栃木県</option><option>群馬県</option><option>埼玉県</option><option>千葉県</option><option>東京都</option><option>神奈川県</option><option>新潟県</option><option>富山県</option><option>石川県</option><option>福井県</option><option>山梨県</option><option>長野県</option><option>岐阜県</option><option>静岡県</option><option>愛知県</option><option>三重県</option><option>滋賀県</option><option>京都府</option><option>大阪府</option><option>兵庫県</option><option>奈良県</option><option>和歌山県</option><option>鳥取県</option><option>島根県</option><option>岡山県</option><option>広島県</option><option>山口県</option><option>徳島県</option><option>香川県</option><option>愛媛県</option><option>高知県</option><option>福岡県</option><option>佐賀県</option><option>長崎県</option><option>熊本県</option><option>大分県</option><option>宮崎県</option><option>鹿児島県</option><option>沖縄県</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row-half">
+          <div class="form-row">
+            <label>メールアドレス <span class="required">必須</span></label>
+            <input type="email" name="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-row">
+            <label>電話番号 <span class="required">必須</span></label>
+            <input type="tel" name="phone" placeholder="090-1234-5678" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>格闘技経験 <span class="required">必須</span></label>
+          <select name="experience" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="pro">プロ経験あり</option>
+            <option value="amateur">アマチュア経験あり</option>
+            <option value="club">部活動・道場での経験あり</option>
+            <option value="none">格闘技経験なし</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>格闘技種目・実績 <span class="optional">任意</span></label>
+          <textarea name="martial_arts" placeholder="例：キックボクシング歴5年、全日本アマチュア選手権出場&#10;例：柔道二段、大学柔道部所属"></textarea>
+        </div>
+        <div class="form-row">
+          <label>希望職種 <span class="required">必須</span></label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="position" value="bodyguard"> ボディーガード</label>
+            <label><input type="checkbox" name="position" value="facility"> 施設警備</label>
+            <label><input type="checkbox" name="position" value="event"> イベント警備</label>
+            <label><input type="checkbox" name="position" value="investigation"> 調査業務</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>希望雇用形態 <span class="required">必須</span></label>
+          <div class="checkbox-group">
+            <label><input type="radio" name="employment" value="fulltime" required> 正社員</label>
+            <label><input type="radio" name="employment" value="contract"> 業務委託</label>
+            <label><input type="radio" name="employment" value="parttime"> アルバイト</label>
+            <label><input type="radio" name="employment" value="any"> どれでも可</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>その他メッセージ <span class="optional">任意</span></label>
+          <textarea name="message" placeholder="ご質問やご要望がありましたらお気軽にどうぞ"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">エントリーする</button>
+        <p class="form-note">※ 送信後、2営業日以内に担当者よりご連絡いたします。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">IRON GUARD</div>
+        <div class="footer-company-name">アイアンガード株式会社</div>
+        <div class="footer-contact-item">📍 本社：〒108-0071 東京都港区白金台3-2-1 渡辺ビル1F</div>
+        <div class="footer-contact-item">📍 支店：〒120-0015 東京都足立区足立4-36-6 YCビル202</div>
+        <div class="footer-contact-item">📞 本社：03-6456-2911</div>
+        <div class="footer-contact-item">📞 支店：080-5645-2718</div>
+        <div class="footer-contact-item">🕐 営業時間：月〜金 10:00〜19:00（Web受付は24時間）</div>
+      </div>
+      <div>
+        <div class="footer-heading">ページ一覧</div>
+        <ul class="footer-links">
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="about.html">アイアンガードとは</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="#entry">採用エントリー</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">採用情報</div>
+        <ul class="footer-links">
+          <li><a href="#jobs">募集職種</a></li>
+          <li><a href="#training">研修制度</a></li>
+          <li><a href="#interview">先輩の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 アイアンガード株式会社 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+// Mobile Menu
+function toggleMenu() {
+  document.getElementById('mainNav').classList.toggle('open');
+}
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight = null;
+    });
+    // Open clicked
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+
+// Service Tabs
+document.querySelectorAll('.service-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const idx = tab.dataset.tab;
+    document.querySelectorAll('.service-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.service-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelector(`.service-panel[data-panel="${idx}"]`).classList.add('active');
+  });
+});
+
+// Scroll Animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Back to Top
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('backToTop');
+  if (window.scrollY > 600) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      const offset = 80;
+      const pos = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: pos, behavior: 'smooth' });
+    }
+    // Close mobile menu
+    document.getElementById('mainNav').classList.remove('open');
+  });
+});
+
+// Form submission (placeholder)
+document.getElementById('entryForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('エントリーありがとうございます！\n2営業日以内に担当者よりご連絡いたします。');
+});
+</script>
+
+</body>
+</html>

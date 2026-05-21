@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要 | アイアンガード株式会社</title>
+<meta name="description" content="アイアンガード株式会社の会社概要。東京都港区白金台に本社を構え、要人警護・施設警備・探偵業務を提供。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.company-table { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; }
+.company-table tr { border-bottom: 1px solid #eef0f4; }
+.company-table th {
+  text-align: left; padding: 20px 24px; font-size: 14px; font-weight: 700;
+  color: #1a1e2e; width: 160px; vertical-align: top; background: #f8f9fb;
+  border-right: 3px solid #c41e1e;
+}
+.company-table td { padding: 20px 24px; font-size: 14px; color: #444; line-height: 1.8; }
+.advisor-grid-v2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; max-width: 800px; margin: 0 auto; }
+.advisor-card-v2 { background: #fff; border: 1px solid #eef0f4; border-radius: 12px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.advisor-card-v2:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+.adv-header { background: #0f1923; padding: 24px 28px; display: flex; align-items: center; gap: 16px; }
+.adv-avatar {
+  width: 56px; height: 56px; background: rgba(212,168,83,0.2); border: 2px solid #d4a853;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0;
+}
+.adv-header h4 { font-size: 18px; font-weight: 700; color: #fff; }
+.adv-header .adv-role { font-size: 12px; color: #d4a853; margin-top: 2px; }
+.adv-body { padding: 24px 28px; }
+.adv-career { list-style: none; }
+.adv-career li { font-size: 13px; color: #555; padding: 6px 0; display: flex; align-items: flex-start; gap: 10px; line-height: 1.6; }
+.adv-career li::before { content: '●'; font-size: 6px; color: #c41e1e; flex-shrink: 0; margin-top: 7px; }
+.access-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.access-card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #eef0f4; }
+.acc-header { background: #0f1923; padding: 20px 28px; }
+.acc-header h3 { font-size: 18px; font-weight: 700; color: #fff; }
+.acc-badge { display: inline-block; background: #c41e1e; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 3px; margin-right: 10px; }
+.acc-body { padding: 24px 28px; }
+.acc-info { font-size: 14px; color: #444; line-height: 1.9; margin-bottom: 16px; }
+.acc-info strong { color: #1a1e2e; }
+.map-embed { width: 100%; height: 250px; border-radius: 8px; overflow: hidden; background: #eef0f4; border: 1px solid #eef0f4; }
+.map-embed iframe { width: 100%; height: 100%; border: 0; }
+.rep-section { background: linear-gradient(135deg, #0f1923 0%, #1a2a3e 100%); }
+.rep-grid { display: grid; grid-template-columns: 260px 1fr; gap: 60px; align-items: center; max-width: 800px; margin: 0 auto; }
+.rep-photo-frame {
+  width: 200px; height: 200px; margin: 0 auto 20px; border-radius: 50%;
+  border: 3px solid #d4a853; overflow: hidden; background: rgba(255,255,255,0.05);
+}
+.rep-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+.rep-name { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 4px; text-align: center; }
+.rep-title { font-size: 13px; color: #d4a853; text-align: center; }
+.rep-text h3 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 20px; line-height: 1.5; }
+.rep-text p { font-size: 15px; color: #a0a8b8; line-height: 2.2; margin-bottom: 16px; }
+.contact-bar { background: #0f1923; padding: 48px 0; }
+.contact-bar-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.cb-info h3 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.cb-info p { font-size: 14px; color: #a0a8b8; }
+.cb-phones { display: flex; gap: 32px; align-items: center; }
+.phone-item { text-align: center; }
+.phone-label { font-size: 12px; color: #a0a8b8; margin-bottom: 4px; }
+.phone-number { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 500; color: #d4a853; letter-spacing: 1px; }
+@media (max-width: 1024px) {
+  .advisor-grid-v2, .access-grid { grid-template-columns: 1fr; }
+  .rep-grid { grid-template-columns: 1fr; }
+  .rep-photo { order: -1; }
+  .contact-bar-inner { flex-direction: column; text-align: center; }
+  .cb-phones { flex-direction: column; gap: 16px; }
+}
+@media (max-width: 768px) {
+  .company-table th { width: 120px; padding: 16px; }
+  .company-table td { padding: 16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="https://ironguardcorp.jp/wp-content/uploads/2022/01/logo.jpg" alt="アイアンガード">
+    <span class="logo-text">IRON GUARD</span>
+  </a>
+  <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  <nav id="mainNav">
+    <a href="about.html">アイアンガードとは</a>
+    <a href="company.html" class="active">会社概要</a>
+    <a href="recruit.html">採用情報</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="recruit.html#entry" class="header-cta">エントリー</a>
+  </nav>
+</header>
+
+<section class="hero hero-half">
+  <div class="hero-bg" style="background-image: url('https://ironguardcorp.jp/wp-content/uploads/2022/01/top1.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">COMPANY</div>
+    <h1>会社概要</h1>
+    <p class="hero-sub">アイアンガード株式会社の企業情報をご案内します。</p>
+  </div>
+</section>
+
+<!-- COMPANY INFO -->
+<section class="section-padding bg-white">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">OVERVIEW</div>
+      <h2 class="section-title">企業情報</h2>
+    </div>
+    <table class="company-table fade-in">
+      <tr><th>商号</th><td>アイアンガード株式会社</td></tr>
+      <tr><th>設立</th><td>2021年9月8日</td></tr>
+      <tr><th>代表取締役</th><td>河村 蘭</td></tr>
+      <tr><th>本社所在地</th><td>〒108-0071<br>東京都港区白金台3-2-1 渡辺ビル1F</td></tr>
+      <tr><th>支店所在地</th><td>〒120-0015<br>東京都足立区足立4-36-6 YCビル202</td></tr>
+      <tr><th>電話番号</th><td>本社：03-6456-2911<br>支店：080-5645-2718</td></tr>
+      <tr><th>FAX</th><td>03-5845-8322</td></tr>
+      <tr><th>事業内容</th><td>1. 施設警備（1号警備）<br>2. 雑踏・交通誘導警備（2号警備）<br>3. 運搬警備（3号警備）<br>4. 要人警護（4号警備）<br>5. 探偵業（浮気調査、素行調査）</td></tr>
+      <tr><th>顧問</th><td>龍 一文（元警視庁捜査一課長）<br>宇都 隆史（自民党政調会長代理）</td></tr>
+      <tr><th>営業時間</th><td>月曜日〜金曜日 10:00〜19:00<br><small style="color:#999;">※ Webでのお問い合わせは24時間受付</small></td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- REPRESENTATIVE -->
+<section class="rep-section section-padding">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label light">REPRESENTATIVE</div>
+      <h2 class="section-title text-white">代表挨拶</h2>
+    </div>
+    <div class="rep-grid fade-in">
+      <div class="rep-photo">
+        <div class="rep-photo-frame">
+          <img src="https://ironguardcorp.jp/wp-content/uploads/2022/06/IMG_0694-300x300.jpg" alt="代表取締役 河村蘭">
+        </div>
+        <div class="rep-name">河村 蘭</div>
+        <div class="rep-title">代表取締役</div>
+      </div>
+      <div class="rep-text">
+        <h3>「鉄壁の護り」を<br>すべての人に届けたい</h3>
+        <p>アイアンガードは、「鉄壁の護り」を実現するために生まれました。格闘技の世界で培った強さと精神力を、人を護るという社会的使命に変えていく。それが私たちの目指す姿です。</p>
+        <p>お客様一人ひとりの安全と安心を第一に、警視庁OBや各分野の専門家の知見を結集した、最高品質の警護サービスを提供してまいります。</p>
+        <p>また、格闘家のセカンドキャリア支援を通じて、スポーツ界の発展にも貢献していきたいと考えています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVISORS -->
+<section class="section-padding bg-light">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">ADVISORS</div>
+      <h2 class="section-title">顧問紹介</h2>
+      <p class="section-subtitle">各分野のトップエキスパートがIGCの品質を監修しています。</p>
+    </div>
+    <div class="advisor-grid-v2 fade-in">
+      <div class="advisor-card-v2">
+        <div class="adv-header">
+          <div class="adv-avatar">👔</div>
+          <div><h4>龍 一文</h4><div class="adv-role">顧問</div></div>
+        </div>
+        <div class="adv-body">
+          <ul class="adv-career">
+            <li>元警視庁捜査一課長</li>
+            <li>警視庁警察学校長</li>
+            <li>警視長</li>
+            <li>豊富な捜査経験と治安維持の専門知識をもとに、IGCの警護品質と法令遵守を監修</li>
+          </ul>
+        </div>
+      </div>
+      <div class="advisor-card-v2">
+        <div class="adv-header">
+          <div class="adv-avatar">🏛</div>
+          <div><h4>宇都 隆史</h4><div class="adv-role">顧問</div></div>
+        </div>
+        <div class="adv-body">
+          <ul class="adv-career">
+            <li>防衛大学理工学部卒</li>
+            <li>自民党政調会長代理（現職）</li>
+            <li>元外務副大臣</li>
+            <li>国防・外交の専門的見地から、IGCの信頼性とガバナンスを支える</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="section-padding bg-white" id="access">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="section-label">ACCESS</div>
+      <h2 class="section-title">アクセス</h2>
+    </div>
+    <div class="access-grid fade-in">
+      <div class="access-card">
+        <div class="acc-header"><h3><span class="acc-badge">本社</span>港区白金台</h3></div>
+        <div class="acc-body">
+          <div class="acc-info">
+            <strong>〒108-0071</strong><br>東京都港区白金台3-2-1 渡辺ビル1F<br><br>
+            <strong>TEL：</strong>03-6456-2911<br><br>
+            <strong>アクセス：</strong><br>東京メトロ南北線・都営三田線「白金台」駅 徒歩すぐ
+          </div>
+          <div class="map-embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.1!2d139.726!3d35.638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b17b0469e43%3A0x0!2z5riv5Yy655m96YeR5Y-wMy0yLTE!5e0!3m2!1sja!2sjp!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="access-card">
+        <div class="acc-header"><h3><span class="acc-badge">支店</span>足立区</h3></div>
+        <div class="acc-body">
+          <div class="acc-info">
+            <strong>〒120-0015</strong><br>東京都足立区足立4-36-6 YCビル202<br><br>
+            <strong>TEL：</strong>080-5645-2718<br>
+            <strong>FAX：</strong>03-5845-8322<br><br>
+            <strong>アクセス：</strong><br>東武伊勢崎線「五反野」駅 徒歩約10分
+          </div>
+          <div class="map-embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.5!2d139.789!3d35.769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e7e2a5b4a5d%3A0x0!2z6Laz56uL5Yy66Laz56uLNC0zNi02!5e0!3m2!1sja!2sjp!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+  <div class="container">
+    <div class="contact-bar-inner">
+      <div class="cb-info"><h3>お気軽にお問い合わせください</h3><p>警護・警備のご依頼、お見積り、採用に関するご相談など</p></div>
+      <div class="cb-phones">
+        <div class="phone-item"><div class="phone-label">本社</div><div class="phone-number">03-6456-2911</div></div>
+        <div class="phone-item"><div class="phone-label">支店</div><div class="phone-number">080-5645-2718</div></div>
+      </div>
+      <a href="contact.html" class="btn-primary">Webで問い合わせ ▸</a>
+    </div>
+  </div>
+</div>
+
+<section class="cta-banner">
+  <div class="container fade-in">
+    <h2>格闘技経験を活かして働きませんか？</h2>
+    <p>ボディーガード・施設警備スタッフを積極採用中。</p>
+    <div class="hero-buttons"><a href="recruit.html" class="btn-outline">採用情報を見る ▸</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">IRON GUARD</div>
+        <div class="footer-company-name">アイアンガード株式会社</div>
+        <div class="footer-contact-item">📍 本社：〒108-0071 東京都港区白金台3-2-1 渡辺ビル1F</div>
+        <div class="footer-contact-item">📍 支店：〒120-0015 東京都足立区足立4-36-6 YCビル202</div>
+        <div class="footer-contact-item">📞 本社：03-6456-2911</div>
+        <div class="footer-contact-item">📞 支店：080-5645-2718</div>
+        <div class="footer-contact-item">🕐 営業時間：月〜金 10:00〜19:00（Web受付は24時間）</div>
+      </div>
+      <div>
+        <div class="footer-heading">ページ一覧</div>
+        <ul class="footer-links">
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="about.html">アイアンガードとは</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">採用情報</div>
+        <ul class="footer-links">
+          <li><a href="recruit.html">募集職種</a></li>
+          <li><a href="recruit.html#training">研修制度</a></li>
+          <li><a href="recruit.html#interview">先輩の声</a></li>
+          <li><a href="recruit.html#faq">よくある質問</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 アイアンガード株式会社 All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+<script>
+function toggleMenu() { document.getElementById('mainNav').classList.toggle('open'); }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+window.addEventListener('scroll', () => { document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 600); });
+</script>
+</body>
+</html>
